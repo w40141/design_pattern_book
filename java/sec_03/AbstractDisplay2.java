@@ -1,4 +1,4 @@
-public abstract class AbstractDisplay {
+public abstract class AbstractDisplay2 {
     public abstract void open();
     public abstract void print();
     public abstract void close();
