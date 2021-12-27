@@ -1,9 +1,9 @@
-public class StringDisplay implements AbstractDisplay {
+public class StringDisplay2 extends AbstractDisplay2 {
 
     private String string;
     private int width;
 
-    public StringDisplay(String string) {
+    public StringDisplay2(String string) {
         this.string = string;
         width = string.length();
     }

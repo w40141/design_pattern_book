@@ -1,5 +1,3 @@
-package java.sec_02;
-
 import javax.imageio.stream.FileImageOutputStream;
 
 public class Main {

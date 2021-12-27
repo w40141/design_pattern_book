@@ -1,5 +1,3 @@
-package java.sec_01;
-
 import java.util.Iterator;
 
 public class Main {

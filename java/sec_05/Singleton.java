@@ -1,5 +1,3 @@
-package java.sec_05;
-
 public class Singleton {
     private static Singleton singletion = new Singleton();
 

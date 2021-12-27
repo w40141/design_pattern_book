@@ -1,6 +1,6 @@
-package java.sec_04.idcard;
+package idcard;
 
-import java.sec_04.framework.Product;
+import framework.Product;
 
 public class IDCard extends Product {
     private String owner;

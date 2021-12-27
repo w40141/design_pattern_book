@@ -1,5 +1,3 @@
-package java.sec_02;
-
 import java.io.IOException;
 
 public interface FileIO {

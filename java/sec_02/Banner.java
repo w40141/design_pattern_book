@@ -1,5 +1,3 @@
-package java.sec_02;
-
 public class Banner {
     private String string;
 

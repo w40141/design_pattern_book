@@ -1,5 +1,3 @@
-package java.sec_05;
-
 public enum TripleEnum {
     ALPHA, BETA, GAMMA;
 

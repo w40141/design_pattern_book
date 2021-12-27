@@ -1,8 +1,8 @@
-public class CharDisplay implements AbstractDisplay{
+public class CharDisplay2 extends AbstractDisplay2{
 
     private char ch;
     
-    public CharDisplay(char ch) {
+    public CharDisplay2(char ch) {
         this.ch = ch;
     }
 

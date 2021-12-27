@@ -1,4 +1,4 @@
-package java.sec_04.framework;
+package framework;
 
 public abstract class Factory {
     public final Product create(String owner) {

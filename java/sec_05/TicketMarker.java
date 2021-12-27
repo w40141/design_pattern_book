@@ -1,5 +1,3 @@
-package java.sec_05;
-
 public class TicketMarker {
     private int ticket = 1000;
     private static TicketMarker ticketMarker = new TicketMarker();

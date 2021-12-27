@@ -1,4 +1,4 @@
-package java.sec_04.framework;
+package framework;
 
 public abstract class Product {
     public abstract void use();

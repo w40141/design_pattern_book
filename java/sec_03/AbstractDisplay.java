@@ -1,5 +1,3 @@
-package java.sec_03;
-
 public interface AbstractDisplay {
     public void open();
     public void print();

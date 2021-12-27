@@ -1,11 +1,14 @@
-import framework.Product;
+import framework.Product2;
 
-// public class MasseageBox implements Product{
-public class MasseageBox implements Product2 {
+public class MasseageBox2 implements Product2 {
     private char decochar;
 
-    public MasseageBox(char decochar) {
+    public MasseageBox2(char decochar) {
         this.decochar = decochar;
+    }
+
+    public MasseageBox2(MasseageBox2 prototype) {
+        this.decochar = prototype.decochar;
     }
 
     @Override
@@ -23,14 +26,7 @@ public class MasseageBox implements Product2 {
     }
 
     @Override
-    public Product createCopy() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return p;
+    public Product2 createCopy() {
+        return new MasseageBox2(this);
     }
-
 }
