@@ -1,3 +1,5 @@
+package java.sec_03;
+
 public class StringDisplay extends AbstractDisplay {
 
     private String string;

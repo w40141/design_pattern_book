@@ -1,6 +1,8 @@
-import framework.Factory;
-import framework.Product;
-import idcard.IDCardFactory;
+package java.sec_04;
+
+import java.sec_04.framework.Factory;
+import java.sec_04.framework.Product;
+import java.sec_04.idcard.IDCardFactory;
 
 public class Main {
     public static void main(String[] args) {

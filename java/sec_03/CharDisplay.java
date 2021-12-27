@@ -1,3 +1,5 @@
+package java.sec_03;
+
 public class CharDisplay extends AbstractDisplay{
 
     private char ch;

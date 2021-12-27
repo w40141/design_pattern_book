@@ -1,4 +1,6 @@
-public abstract class AbstractDisplay {
+package java.sec_03;
+
+public interface AbstractDisplay {
     public void open();
     public void print();
     public void close();

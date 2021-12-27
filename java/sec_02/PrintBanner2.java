@@ -1,3 +1,5 @@
+package java.sec_02;
+
 public class PrintBanner2 extends Print2 {
     private Banner banner;
 

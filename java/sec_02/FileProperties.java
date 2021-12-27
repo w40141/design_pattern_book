@@ -1,3 +1,5 @@
+package java.sec_02;
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;

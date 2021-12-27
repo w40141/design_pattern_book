@@ -1,7 +1,7 @@
-package idcard;
+package java.sec_04.idcard;
 
-import framework.Factory;
-import framework.Product;
+import java.sec_04.framework.Factory;
+import java.sec_04.framework.Product;
 
 public class IDCardFactory extends Factory {
     private int nowNumber = 0;
