@@ -1,7 +1,7 @@
 import framework.Product;
 
 // public class MasseageBox implements Product{
-public class MasseageBox implements Product2 {
+public class MasseageBox implements Product {
     private char decochar;
 
     public MasseageBox(char decochar) {
