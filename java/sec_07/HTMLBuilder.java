@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class HTMLBuilder extends Builder {
+public class HTMLBuilder implements Builder {
     private String filename = "untitled.html";
     private StringBuilder sb = new StringBuilder();
 
