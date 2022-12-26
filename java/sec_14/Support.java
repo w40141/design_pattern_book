@@ -1,38 +1,39 @@
 public abstract class Support {
-    private String name;
-    private Support next;
+	private String name;
+	private Support next;
 
-    public Support(String name) {
-        this.name = name;
-        this.next = null;
-    }
+	public Support(String name) {
+		this.name = name;
+		this.next = null;
+	}
 
-		public Support setNext(Support next) {
-        this.next = next;
-        return next;
-    }
+	public Support setNext(Support next) {
+		this.next = next;
+		return next;
+	}
 
-    public void support(Trouble trouble) {
-        if (resolve(trouble)) {
-            done(trouble);
-        } else if (next != null) {
-            next.support((trouble));
-        } else {
-            faile(trouble);
-        }
-    }
-    @Override
-    public String toString(){
-        return "[" + name + "]";
-    }
+	public void support(Trouble trouble) {
+		if (resolve(trouble)) {
+			done(trouble);
+		} else if (next != null) {
+			next.support((trouble));
+		} else {
+			faile(trouble);
+		}
+	}
 
-    protected abstract boolean resolve(Trouble trouble);
+	@Override
+	public String toString() {
+		return "[" + name + "]";
+	}
 
-    protected void done(Trouble trouble) {
-        System.out.println(trouble + " is resolved by " + this + ".");
-    }
+	protected abstract boolean resolve(Trouble trouble);
 
-    protected void faile(Trouble trouble) {
-        System.out.println(trouble + " cannot be resolved.");
-    }
+	protected void done(Trouble trouble) {
+		System.out.println(trouble + " is resolved by " + this + ".");
+	}
+
+	protected void faile(Trouble trouble) {
+		System.out.println(trouble + " cannot be resolved.");
+	}
 }
