@@ -1,4 +1,4 @@
-package github.com.w40141.design_pattern_book.java.sec15.pagemaker;
+package pagemaker;
 
 import java.io.Writer;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * HtmlWriter
  */
-public class HtmlWriter {
+class HtmlWriter {
 	private Writer writer;
 
 	public HtmlWriter(Writer writer) {

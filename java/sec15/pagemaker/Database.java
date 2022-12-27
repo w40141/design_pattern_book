@@ -1,4 +1,4 @@
-package github.com.w40141.design_pattern_book.java.sec15.pagemaker;
+package pagemaker;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.Properties;
 /**
  * Database
  */
-public class Database {
+class Database {
 
 	private Database() {
 	}
