@@ -3,30 +3,30 @@ package idcard;
 import framework.Product;
 
 public class IDCard extends Product {
-    private String owner;
-    private int number;
+	private String owner;
+	private int number;
 
-    IDCard(String owner, int number) {
-        System.out.println(owner + "のカードをID: " + number + " として作ります。");
-        this.owner = owner;
-        this.number = number;
-    }
+	IDCard(String owner, int number) {
+		System.out.println(owner + "のカードをID: " + number + " として作ります。");
+		this.owner = owner;
+		this.number = number;
+	}
 
-    @Override
-    public void use() {
-        System.out.println(this + "を使います。");
-    }
+	@Override
+	public void use() {
+		System.out.println(this + "を使います。");
+	}
 
-    @Override
-    public String toString() {
-        return "[IDCard: " + owner + ", Number: " + number + "]";
-    }
+	@Override
+	public String toString() {
+		return "[IDCard: " + owner + ", Number: " + number + "]";
+	}
 
-    public String getOwner() {
-        return owner;
-    }
+	public String getOwner() {
+		return owner;
+	}
 
-    public int getNumber(){
-        return this.number;
-    }
+	public int getNumber() {
+		return this.number;
+	}
 }

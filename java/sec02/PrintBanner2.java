@@ -1,17 +1,17 @@
 public class PrintBanner2 extends Print2 {
-    private Banner banner;
+	private Banner banner;
 
-    public PrintBanner2(String string) {
-        this.banner = new Banner(string);
-    }
+	public PrintBanner2(String string) {
+		this.banner = new Banner(string);
+	}
 
-    @Override
-    public void printWeak() {
-        banner.showWithParen();
-    }
+	@Override
+	public void printWeak() {
+		banner.showWithParen();
+	}
 
-    @Override
-    public void printStrong() {
-        banner.showWithAster();
-    }
+	@Override
+	public void printStrong() {
+		banner.showWithAster();
+	}
 }

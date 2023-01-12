@@ -1,23 +1,23 @@
-public class CharDisplay implements AbstractDisplay{
+public class CharDisplay implements AbstractDisplay {
 
-    private char ch;
-    
-    public CharDisplay(char ch) {
-        this.ch = ch;
-    }
+	private char ch;
 
-    @Override
-    public void open() {
-        System.out.print("<<");
-    }
+	public CharDisplay(char ch) {
+		this.ch = ch;
+	}
 
-    @Override
-    public void print() {
-        System.out.print(ch);
-    }
+	@Override
+	public void open() {
+		System.out.print("<<");
+	}
 
-    public void close() {
-        System.out.println(">>");
-    }
+	@Override
+	public void print() {
+		System.out.print(ch);
+	}
+
+	public void close() {
+		System.out.println(">>");
+	}
 
 }
