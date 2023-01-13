@@ -3,7 +3,6 @@ import java.awt.Color;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
-import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -74,18 +73,29 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
 			textPass.setColleagueEnabled(false);
 			buttonOk.setColleagueEnabled(true);
 		} else {
-		textUser.setColleagueEnabled(true);
-		userpassChanged();
+			textUser.setColleagueEnabled(true);
+			userpassChanged();
 		}
 	}
 
 	private void userpassChanged() {
+		if (textUser.getText().length() > 0) {
+			textPass.setColleagueEnabled(true);
+			if (textPass.getText().length() >= 4) {
+				buttonOk.setColleagueEnabled(true);
+			} else {
+				buttonOk.setColleagueEnabled(false);
+			}
+		} else {
+			textPass.setColleagueEnabled(false);
+			buttonOk.setColleagueEnabled(false);
+		}
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-
+		System.out.println(e.toString());
+		System.exit(0);
 	}
 
 }

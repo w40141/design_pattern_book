@@ -9,8 +9,8 @@ import java.awt.event.TextListener;
 public class ColleagueTextField extends TextField implements TextListener, Colleague {
 	private Mediator mediator;
 
-	public ColleagueTextField(String text, int colums) {
-		super(text, colums);
+	public ColleagueTextField(String text, int columns) {
+		super(text, columns);
 	}
 
 	@Override
