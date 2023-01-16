@@ -1,6 +1,3 @@
-/**
- * State
- */
 public interface State {
 
 	public abstract void doClock(Context context, int hour);

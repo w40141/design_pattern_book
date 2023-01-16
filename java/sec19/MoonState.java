@@ -25,6 +25,7 @@ public class MoonState implements State {
 	@Override
 	public void doAlarm(Context context) {
 		context.callSecurityCenter("非常ベル(昼食時)");
+		context.changeState(UrgentState.getInstance());
 	};
 
 	@Override
